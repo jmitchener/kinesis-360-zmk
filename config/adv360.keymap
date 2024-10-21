@@ -32,13 +32,12 @@
         thumb_layer: thumb_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "THUMB_LAYER";
-            bindings = <&tog>, <&kp>;
+            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             require-prior-idle-ms = <175>;
             flavor = "tap-preferred";
-            hold-trigger-on-release;
         };
     };
 
@@ -50,11 +49,11 @@
 
         default_layer {
             bindings = <
-&kp GRAVE         &kp N1  &kp N2  &kp N3    &kp N4     &kp N5  &none                                                                                         &mo 3            &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &none
-&kp TAB           &kp Q   &kp W   &kp E     &kp R      &kp T   &none                                                                                         &none            &kp Y   &kp U   &kp I      &kp O    &kp P     &kp BSLH
-&kp LEFT_CONTROL  &kp A   &kp S   &kp D     &kp F      &kp G   &none                   &kp LEFT_META          &kp LALT      &kp LGUI   &kp RCTRL             &none            &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT         &kp Z   &kp X   &kp C     &kp V      &kp B                                                  &kp HOME      &kp PG_UP                                         &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-&none             &none   &none   &kp LEFT  &kp RIGHT          &hm LEFT_GUI BACKSPACE  &thumb_layer 1 DELETE  &kp ESC       &kp PG_DN  &thumb_layer 1 ENTER  &hm RMETA SPACE          &kp UP  &kp DOWN   &none    &none     &none
+&kp GRAVE                &kp N1  &kp N2  &kp N3    &kp N4     &kp N5  &none                                                                                         &mo 3            &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &none
+&kp TAB                  &kp Q   &kp W   &kp E     &kp R      &kp T   &none                                                                                         &none            &kp Y   &kp U   &kp I      &kp O    &kp P     &kp BSLH
+&mt LEFT_CONTROL ESCAPE  &kp A   &kp S   &kp D     &kp F      &kp G   &to 4                   &kp LEFT_META          &kp LALT      &kp LGUI   &kp RCTRL             &none            &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT                &kp Z   &kp X   &kp C     &kp V      &kp B                                                  &kp HOME      &kp PG_UP                                         &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+&none                    &none   &none   &kp LEFT  &kp RIGHT          &hm LEFT_GUI BACKSPACE  &thumb_layer 1 DELETE  &kp ESC       &kp PG_DN  &thumb_layer 1 ENTER  &hm RMETA SPACE          &kp UP  &kp DOWN   &none    &none     &none
             >;
         };
 
@@ -85,6 +84,16 @@
 &none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+            >;
+        };
+
+        game {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &to 0      &trans         &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                            &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &kp SPACE  &kp BACKSPACE  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
