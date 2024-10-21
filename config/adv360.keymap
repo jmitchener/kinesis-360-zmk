@@ -54,17 +54,7 @@
 &kp TAB           &kp Q   &kp W   &kp E     &kp R      &kp T   &none                                                                                         &none            &kp Y   &kp U   &kp I      &kp O    &kp P     &kp BSLH
 &kp LEFT_CONTROL  &kp A   &kp S   &kp D     &kp F      &kp G   &none                   &kp LEFT_META          &kp LALT      &kp LGUI   &kp RCTRL             &none            &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT         &kp Z   &kp X   &kp C     &kp V      &kp B                                                  &kp HOME      &kp PG_UP                                         &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-&none             &none   &none   &kp LEFT  &kp RIGHT          &hm LEFT_GUI BACKSPACE  &thumb_layer 2 DELETE  &kp ESC       &kp PG_DN  &thumb_layer 2 ENTER  &hm RMETA SPACE          &kp UP  &kp DOWN   &none    &none     &none
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&none             &none   &none   &kp LEFT  &kp RIGHT          &hm LEFT_GUI BACKSPACE  &thumb_layer 1 DELETE  &kp ESC       &kp PG_DN  &thumb_layer 1 ENTER  &hm RMETA SPACE          &kp UP  &kp DOWN   &none    &none     &none
             >;
         };
 
@@ -75,6 +65,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp F12  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans                &trans            &trans             &trans                 &trans   &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                        &trans            &trans             &trans                 &trans   &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
